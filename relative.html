@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position值为relative</title>
+    <style>
+        .top{
+            height:100px;
+            width:100px;
+            background:red;
+            display:inline-block;
+        }
+
+        .center1{
+            height:120px;
+            width:120px;
+            background:blue;
+            display:inline-block;
+        }
+
+        .bottom{
+            height:140px;
+            width:140px;
+            background:yellow;
+            display:inline-block;
+        }
+
+        .next{
+            margin-top:20px
+        }
+
+        .center2{
+            height:120px;
+            width:120px;
+            background:blue;
+            display:inline-block;
+            position:relative;
+            left:30px;
+            top:30px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="top">
+        top
+    </div>
+    <div class="center1">
+        center
+    </div>
+    <div class="bottom">
+        bottom
+    </div>
+</div>
+
+<div class="next">
+    <div class="top">
+        top
+    </div>
+    <div class="center2">
+        center
+    </div>
+    <div class="bottom">
+        bottom
+    </div>
+</div>
+</body>
+</html>
