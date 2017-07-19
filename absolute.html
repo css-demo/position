@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position值为absolute</title>
+    <style>
+        .relative{
+            width:300px;
+            height:300px;
+            border:1px solid green;
+        }
+
+        .absolute{
+            width:100px;
+            height:100px;
+            border:1px solid yellow;
+            position:absolute;
+            top:150px;
+            left:100px;
+        }
+
+        .container{
+            width:150px;
+            height:150px;
+            border:1px solid blue;
+            margin-left:50px;
+        }
+    </style>
+</head>
+<body>
+<div class="relative">
+    这是一个相对定位，是绝对定位元素的祖先元素
+    <div class="container">
+        这是父元素，但是没有被定位
+        <div class="absolute">
+            这是一个absolute定位
+        </div>
+    </div>
+</div>
+</body>
+</html>
